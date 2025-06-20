@@ -24,7 +24,7 @@ Siga os passos a seguir para usar o projeto localmente.
 
 É necessário ter instalado:
 
-- Um ambiente de desenvolvimento para Python (Neste tutorial, usaremos o VS Code + Python já instalado no path, mas podem ser outros)
+- Um ambiente de desenvolvimento para Python (Neste tutorial, usaremos o VS Code + <a href="https://www.python.org/downloads/">Python</a>  já instalado no path, mas podem ser outros)
 
 <h3>Clonando</h3>
 
