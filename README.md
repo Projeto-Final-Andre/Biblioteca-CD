@@ -10,6 +10,7 @@ O principal objetivo da análise presente nesse documento é aplicar as técnica
 - Medidas de dispersão
 - Testes de normalidade
 - Regressão linear simples
+- Visualização com gráficos estatísticos
 - Séries temporais
 - Análise de dados categóricos<br>
 
