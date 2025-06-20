@@ -1,20 +1,20 @@
 # 📚 Projeto Final: Análise de Dados com Python - Biblioteca
 
-<img src="img/print_banco.png" />
+<img src="img/print_dados.png" />
 
 # _🎯 Introdução & objetivo_
 
-Esse projeto é um sistema de gerenciamento de uma biblioteca comunitária de porte médio, que foi implementada visando a aplicação dos conceitos estudados pela equipe durante as aulas de Banco de Dados. O banco de dados Biblioteca permite a visualização e manipulação dos dados que fazem parte de um sistema literário, gerenciando dados de empréstimos, funcionários e leitores.
-O projeto foi implementado no sistema de banco de dados relacional PostgreSQL, com sua modelagem realizada na plataforma digital do Mermaid Chart Inc., utilizando sua ferramenta baseada na linguagem JavaScript para a criação de um diagrama mais limpo e rápido.<br>
-**_Acessando a documentação (Projeto Final Banco de Dados Relacional - Biblioteca.docx), é possível visualizar todos os detalhes do projeto._**
+Este projeto tem como objeto de estudo o banco de dados disponibilizado publicamente pela <a href="https://dados.gov.br/dados/conjuntos-dados/emprestimos_biblioteca">Biblioteca da Universidade Federal de São Paulo (UNIFESP)</a>, o qual possui informações referentes ao acervo, empréstimos e perfis de usuários. O banco de dados escolhido é um exemplo real, o que possibilita uma ampla análise de seus dados por meio da Ciência de Dados.
+O principal objetivo da análise presente nesse documento é aplicar as técnicas aprendidas durante as aulas de Ciência de Dados para identificar padrões de comportamento no uso da biblioteca. Para isso, foram utilizadas: 
+- Medidas de tendência central,
+- Medidas de dispersão
+- Testes de normalidade
+- Regressão linear simples
+- Séries temporais
+- Análise de dados categóricos<br>
 
-# **_👥 Público alvo_**
-
-| Perfil de usuário          | Descrição, necessidades e interesses.                                                                                                                                                                                         |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chefe                      | Funcionário chefe da biblioteca, deseja que seus funcionários tenham informações organizados, mas sem acesso a funções que podem prejudicar o funcionamento da biblioteca, somente ele pode mudar configurações mais críticas |
-| Funcionário                | Funcionário comum da biblioteca, precisa registrar novos usuários, empréstimos, livros e suas respectivas informações relacionadas.                                                                                           |
-| Frequentador da biblioteca | Usuário que precisa saber se realizou empréstimos, data de devolução, quer emprestar livros e ver quais estão disponíveis.                                                                                                    |
+Os métodos citados permitiram compreender diferentes aspectos do funcionamento da biblioteca, desde a frequência de empréstimos ao longo do tempo até características associadas ao perfil dos usuários.<br>
+**_Acessando a documentação (Projeto Final Análise de Dados com Python - Biblioteca.docx), é possível visualizar todos os detalhes do projeto._**
 
 # _📁 Usando o projeto localmente_
 
@@ -24,37 +24,33 @@ Siga os passos a seguir para usar o projeto localmente.
 
 É necessário ter instalado:
 
-- PostgreeSQL
+- Um ambiente de desenvolvimento para Python (Neste tutorial, usaremos o VS Code + Python já instalado no path, mas podem ser outros)
 
 <h3>Clonando</h3>
-
-Se preferir, pode clonar o projeto localmente para acessar os arquivos, se não, pode vizualizá-los pelo próprio GitHub.
 
 Para clonar o projeto, coloque o seguinte código no terminal:
 
 ```bash
-git clone https://github.com/Projeto-Final-Andre/Biblioteca-BD.git
+git clone https://github.com/Projeto-Final-Andre/Biblioteca-CD.git
 ```
 
 <h3>Como rodar o projeto</h3>
 
-1. Abra o PostgreSQL
-2. Já tendo um servidor, abra o Query Tool (Alt + Shift + Q)
-3. Cole no espaço query:
+1. Abra a pasta desse projeto no VS Code
+2. Cole no terminal:
 
 ```bash
-CREATE DATABASE biblioteca;
+pip install notebook jupyterlab ipykernel;
 ```
 
-4. Selecione a database biblioteca e abra o Query Tool novamente
-5. Abra o arquivo ddl.sql
-6. Copie todos os comandos exceto pelo listado acima
-7. Abra o arquivo dmt_dtl.sql
-8. Copie todos os comandos listados somente até o SAVEPOINT original;
-9. Cole no espaço query
-10. Para rodar testes de update e delete, copie os demais códigos do arquivo e cole no mesmo espaço, **_se quiser que as mudanças sejam permanentes, retire o ROLLBACK_**
-11. Para realizar as consultas, abra o arquivo dql.sql, copie e cole os comandos individualmente para observar o resultado
-12. Para executar o controle de permissões, abra o arquivo dcl.sql, copie e cole todos os comandos no arquivo, para testes, clique em biblioteca/postgre@PostgreSQL na parte superior, < new conection >, selecione a database biblioteca e user, salve, digite a senha do usuário escolhido e digite comandos básicos para verificar se está funcionando.
+3. Abra a sessão extensões (Ctrl + Shift + X)
+4. Instale as extensões Python e Jupyter, ambas da Microsoft
+5. Cole no terminal:
+
+```bash
+pip install pandas numpy matplotlib seaborn openpyxl scikit-learn jinja2 openpyxl 
+```
+7. Abra o arquivo que deseja rodar e clique em Run All
 
 # _🤝 Contribuidores_
 
